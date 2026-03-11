@@ -6,14 +6,7 @@ module.exports = grammar({
 
   extras: ($) => [/\s/, $.line_comment, $.block_comment],
 
-  conflicts: ($) => [
-    [$.named_type, $.name_resolved_expr],
-    [$.named_type, $._expr],
-    [$.static_call_expr, $.name_resolved_expr],
-    [$.struct_lit, $.named_type],
-    [$.method_call_expr, $.field_access_expr],
-    [$.named_type, $.named_type],
-  ],
+  conflicts: ($) => [[$.named_type, $.named_type]],
 
   word: ($) => $.identifier,
 
