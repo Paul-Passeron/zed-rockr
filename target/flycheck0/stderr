@@ -1,0 +1,471 @@
+   0.018030954s  INFO prepare_target{force=false package_id=tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr) target="tree_sitter_rockr"}: cargo::core::compiler::fingerprint: fingerprint error for tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("tree_sitter_rockr", ["lib"], "/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/bindings/rust/lib.rs", Edition2021) }
+   0.018054566s  INFO prepare_target{force=false package_id=tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr) target="tree_sitter_rockr"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/tree-sitter-rockr-04b682de3e9c13fe/lib-tree_sitter_rockr`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  16: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  17: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  20: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  21: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   0.066854029s  INFO prepare_target{force=false package_id=tree-sitter v0.26.6 target="tree_sitter"}: cargo::core::compiler::fingerprint: fingerprint error for tree-sitter v0.26.6/Check { test: false }/TargetInner { ..: lib_target("tree_sitter", ["lib"], "/home/paulpasseron/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tree-sitter-0.26.6/binding_rust/lib.rs", Edition2021) }
+   0.066866698s  INFO prepare_target{force=false package_id=tree-sitter v0.26.6 target="tree_sitter"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/tree-sitter-43fe0cd00a24bbf3/lib-tree_sitter`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.067040288s  INFO prepare_target{force=false package_id=regex v1.12.3 target="regex"}: cargo::core::compiler::fingerprint: fingerprint error for regex v1.12.3/Check { test: false }/TargetInner { ..: lib_target("regex", ["lib"], "/home/paulpasseron/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-1.12.3/src/lib.rs", Edition2021) }
+   0.067045141s  INFO prepare_target{force=false package_id=regex v1.12.3 target="regex"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/regex-694fe5bec41b5d81/lib-regex`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.067176888s  INFO prepare_target{force=false package_id=aho-corasick v1.1.4 target="aho_corasick"}: cargo::core::compiler::fingerprint: fingerprint error for aho-corasick v1.1.4/Check { test: false }/TargetInner { ..: lib_target("aho_corasick", ["lib"], "/home/paulpasseron/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aho-corasick-1.1.4/src/lib.rs", Edition2021) }
+   0.067181581s  INFO prepare_target{force=false package_id=aho-corasick v1.1.4 target="aho_corasick"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/aho-corasick-0e80a63c7c989ddd/lib-aho_corasick`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  19: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  20: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  23: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  24: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  28: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  29: <unknown>
+   0.067318341s  INFO prepare_target{force=false package_id=regex-automata v0.4.14 target="regex_automata"}: cargo::core::compiler::fingerprint: fingerprint error for regex-automata v0.4.14/Check { test: false }/TargetInner { benched: false, ..: lib_target("regex_automata", ["lib"], "/home/paulpasseron/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.4.14/src/lib.rs", Edition2021) }
+   0.067323209s  INFO prepare_target{force=false package_id=regex-automata v0.4.14 target="regex_automata"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/regex-automata-623040e1afb9f775/lib-regex_automata`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  19: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  20: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  23: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  24: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  28: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  29: <unknown>
+   0.067455838s  INFO prepare_target{force=false package_id=regex-syntax v0.8.10 target="regex_syntax"}: cargo::core::compiler::fingerprint: fingerprint error for regex-syntax v0.8.10/Check { test: false }/TargetInner { ..: lib_target("regex_syntax", ["lib"], "/home/paulpasseron/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-syntax-0.8.10/src/lib.rs", Edition2021) }
+   0.067460020s  INFO prepare_target{force=false package_id=regex-syntax v0.8.10 target="regex_syntax"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/regex-syntax-c455a441f43c9ee4/lib-regex_syntax`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  20: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  21: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  23: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  24: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  25: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  26: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  27: main
+  28: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  29: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  30: <unknown>
+   0.068418241s  INFO prepare_target{force=false package_id=tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr) target="build-script-build"}: cargo::core::compiler::fingerprint: fingerprint error for tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr)/RunCustomBuild/TargetInner { ..: custom_build_target("build-script-build", "/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/bindings/rust/build.rs", Edition2021) }
+   0.068430433s  INFO prepare_target{force=false package_id=tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr) target="build-script-build"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/tree-sitter-rockr-f7c001141daf80d3/run-build-script-build-script-build`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::custom_build::build_work
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.068546273s  INFO prepare_target{force=false package_id=tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr) target="tree_sitter_rockr"}: cargo::core::compiler::fingerprint: fingerprint error for tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("tree_sitter_rockr", ["lib"], "/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/bindings/rust/lib.rs", Edition2021) }
+   0.068551601s  INFO prepare_target{force=false package_id=tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr) target="tree_sitter_rockr"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/.fingerprint/tree-sitter-rockr-85d28109bd617fae/test-lib-tree_sitter_rockr`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  16: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  17: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:590:40
+  20: std::panicking::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panicking.rs:553:19
+  21: std::panic::catch_unwind
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/843f8ce2ebc01d35a30484eadc8a84cdc6130844/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+    Checking regex-syntax v0.8.10
+    Checking aho-corasick v1.1.4
+   Compiling tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr)
+warning: tree-sitter-rockr@0.0.1: cc1: fatal error: ../../src/parser.c: No such file or directory
+warning: tree-sitter-rockr@0.0.1: compilation terminated.
+error: failed to run custom build command for `tree-sitter-rockr v0.0.1 (/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr)`
+note: To improve backtraces for build dependencies, set the CARGO_PROFILE_DEV_BUILD_OVERRIDE_DEBUG=true environment variable to enable debug information generation.
+
+Caused by:
+  process didn't exit successfully: `/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/build/tree-sitter-rockr-09ebe85e8bf3bf9a/build-script-build` (exit status: 1)
+  --- stdout
+  OUT_DIR = Some(/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/build/tree-sitter-rockr-f7c001141daf80d3/out)
+  OPT_LEVEL = Some(0)
+  TARGET = Some(x86_64-unknown-linux-gnu)
+  CARGO_ENCODED_RUSTFLAGS = Some()
+  HOST = Some(x86_64-unknown-linux-gnu)
+  cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+  CC_x86_64-unknown-linux-gnu = None
+  cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+  CC_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=HOST_CC
+  HOST_CC = None
+  cargo:rerun-if-env-changed=CC
+  CC = None
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  RUSTC_WRAPPER = None
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  DEBUG = Some(true)
+  CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2,x87)
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  OUT_DIR = Some(/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/build/tree-sitter-rockr-f7c001141daf80d3/out)
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  TARGET = Some(x86_64-unknown-linux-gnu)
+  CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2,x87)
+  HOST = Some(x86_64-unknown-linux-gnu)
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  OUT_DIR = Some(/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/build/tree-sitter-rockr-f7c001141daf80d3/out)
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  TARGET = Some(x86_64-unknown-linux-gnu)
+  CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2,x87)
+  HOST = Some(x86_64-unknown-linux-gnu)
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  OUT_DIR = Some(/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/build/tree-sitter-rockr-f7c001141daf80d3/out)
+  cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+  cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+  CRATE_CC_NO_DEFAULTS = None
+  TARGET = Some(x86_64-unknown-linux-gnu)
+  CARGO_CFG_TARGET_FEATURE = Some(fxsr,sse,sse2,x87)
+  HOST = Some(x86_64-unknown-linux-gnu)
+  cargo:rerun-if-env-changed=CFLAGS
+  CFLAGS = None
+  cargo:rerun-if-env-changed=HOST_CFLAGS
+  HOST_CFLAGS = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+  CFLAGS_x86_64_unknown_linux_gnu = None
+  cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+  CFLAGS_x86_64-unknown-linux-gnu = None
+  cargo:warning=cc1: fatal error: ../../src/parser.c: No such file or directory
+  cargo:warning=compilation terminated.
+
+  --- stderr
+
+
+  error occurred in cc-rs: command did not execute successfully (status code exit status: 1): LC_ALL="C" "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-gdwarf-4" "-fno-omit-frame-pointer" "-m64" "-I" "../../src" "-Wall" "-Wextra" "-Wno-unused-variable" "-Wno-unused-parameter" "-std=c99" "-o" "/home/paulpasseron/Documents/zed-rockr/tree-sitter-rockr/target/debug/build/tree-sitter-rockr-f7c001141daf80d3/out/c489098d4b8428b7-parser.o" "-c" "../../src/parser.c"
+
+
+warning: build failed, waiting for other jobs to finish...
+    Checking regex-automata v0.4.14
+    Checking regex v1.12.3
+    Checking tree-sitter v0.26.6
